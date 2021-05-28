@@ -1,0 +1,87 @@
+.App {
+  position: relative;
+  text-align: center;
+  min-width: 100vh;
+  min-height: 100vh;
+  background: linear-gradient(
+    107deg,
+    rgba(137, 150, 245, 0.85),
+    rgba(127, 250, 235, 0.85)
+  );
+  overflow: hidden;
+  // filter: blur(100px);
+
+  .bg-square {
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    left: -740px;
+    top: -150px;
+    filter: blur(100px);
+
+    background: radial-gradient(
+      38% 45% at 50% 50%,
+      rgba(137, 150, 245, 1),
+      rgba(127, 250, 235, 0.85)
+    );
+    // clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    border-right: 50% solid transparent;
+    border-left: 50% solid transparent;
+    border-bottom: 100% solid transparent;
+
+    border-radius: 30px;
+    overflow-x: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    // z-index: -1;
+  }
+
+  .bg-circle {
+    position: absolute;
+    width: 55%;
+    height: 115.4%;
+    left: 1125px;
+    top: 125px;
+    border-radius: 100%;
+    // border: chocolate solid;
+    background: linear-gradient(
+      194deg,
+      rgba(137, 150, 245, 1),
+      rgba(127, 250, 235, 0.85)
+    );
+    filter: blur(80px);
+  }
+
+  .header-box {
+    position: relative;
+    width: 55%;
+    height: 13vh;
+    left: 22%;
+    top: 2vh;
+    background: linen;
+    z-index: 3;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    border-radius: 39px;
+    box-shadow: 9px 8px 6px rgba(0, 0, 0, 0.25);
+    h1 {
+      position: relative;
+      font-family: "Poppins";
+      font-size: 3rem;
+      margin-left: 4%;
+      background: linear-gradient(
+        262.66deg,
+        rgba(78, 78, 78, 1),
+        rgba(84, 96, 94, 0.85)
+      );
+      background-size: 100%;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: 3px;
+    }
+  }
+}

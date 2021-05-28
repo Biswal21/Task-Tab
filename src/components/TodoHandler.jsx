@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
 // import ClearList from './ClearList';
-import data from './data.json';
-import TodoDisplay from './TodoDisplay';
+import TodoDisplay from './TodoDisplay.jsx';
 import TodoForm from './TodoForm';
+import './TodoHandler.css';
 
 class TodoHandler extends Component {
 
@@ -93,16 +93,19 @@ class TodoHandler extends Component {
     render() {
 
         return (
-            <div>
-                
-                <TodoForm userInput={this.state.userInput} inputHandler={this.inputHandler} formHandler={this.formHandler} /> 
-                <TodoDisplay todos={this.state.todos} 
+            <div className='glass-container'>
+               
+                <TodoDisplay 
+                todos={this.state.todos} 
                 userInput={this.state.userInput}
                 statusHandler={this.statusHandler}
                 deleteTodoItem={this.deleteTodoItem}
                 />
-                <button className='slear-btn'
+
+                <button className='clear-btn'
                 onClick={this.clearList}>Clear List</button>
+
+                 <TodoForm userInput={this.state.userInput} inputHandler={this.inputHandler} formHandler={this.formHandler} /> 
             </div>
         )
     }

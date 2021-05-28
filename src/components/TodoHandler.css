@@ -1,0 +1,15 @@
+.glass-container {
+  width: 60%;
+  height: 80vh;
+  position: absolute;
+  top: 18vh;
+  left: 20%;
+  right: 10%;
+  background: linear-gradient(108.6deg, rgba(255, 255, 255, 0.3575), rgba(255, 255, 255, 0.0975));
+  border: rgba(255, 255, 255, 0.85) solid 1.2px;
+  border-radius: 26px;
+  -webkit-backdrop-filter: blur(59px);
+          backdrop-filter: blur(59px);
+  z-index: 3;
+}
+/*# sourceMappingURL=TodoHandler.css.map */

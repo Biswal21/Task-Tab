@@ -1,28 +1,9 @@
 import React, { Component } from 'react'
-import Todo from './Todo.jsx';
-import Progress from './Progress';
-import Completed from './Completed.jsx';
+import Todo from './TodoList.jsx';
 
 class TodoDisplay extends Component {
     
-    // statusProgress=(id)=>{
-    //     // console.log(this.props.todo.id);
-    //     this.props.statusHandler(id,'progress')
-    // }
-    
-    // deleteItem=(id)=>{
-    //     // console.log(this.props.todo.id);
-    //     this.props.deleteTodoItem(id)
-    // }
-    // statusTodo=(id)=>{
-    //     // console.log(this.props.prog.id);
-    //     this.props.statusHandler(id,'todo')
-    // }
-    // statusDone=(id)=>{
-    //     // console.log(this.props.prog.id);
-    //     this.props.statusHandler(id,'done')
-    // }
-    
+   
     render() {
 
         return (

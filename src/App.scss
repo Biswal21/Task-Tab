@@ -35,7 +35,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    // z-index: -1;
+    z-index: 0;
   }
 
   .bg-circle {
@@ -56,11 +56,11 @@
 
   .header-box {
     position: relative;
-    width: 55%;
+    width: 45%;
     height: 13vh;
     left: 22%;
     top: 2vh;
-    background: linen;
+    background: #fff;
     z-index: 3;
     display: flex;
     justify-content: left;
@@ -81,7 +81,70 @@
       background-size: 100%;
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      letter-spacing: 3px;
+      // letter-spacing: 3px;
     }
+  }
+
+  .glass-circle {
+    position: relative;
+    left: 13%;
+    top: 44vh;
+    width: 350px;
+    height: 350px;
+    border-radius: 100%;
+    z-index: 1;
+    background: #000;
+    background: linear-gradient(
+      108.61deg,
+      rgba(255, 255, 255, 0.5525) -1.6%,
+      rgba(255, 255, 255, 0.202271) 33.23%,
+      rgba(255, 255, 255, 0.0975) 98.88%
+    );
+    // filter: blur(3px);
+  }
+  .glass-rombus {
+    position: relative;
+    left: 68%;
+    top: -42vh;
+    width: 300px;
+    height: 240px;
+    background: linear-gradient(
+      142.03deg,
+      rgba(255, 255, 255, 0.5525) 22.76%,
+      rgba(255, 255, 255, 0.202271) 49.25%,
+      rgba(255, 255, 255, 0.0975) 111.31%
+    );
+    // clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+    transform: skewX(-40deg) skewY(10deg) rotate(-20deg);
+    border-radius: 22px 18px;
+    z-index: 1;
+  }
+
+  .glass-poly {
+    position: relative;
+    left: 65%;
+    top: -9vh;
+    z-index: 1;
+    width: 250px;
+    height: 250px;
+    background: linear-gradient(
+      106.22deg,
+      rgba(255, 255, 255, 0.4375) 26.16%,
+      rgba(255, 255, 255, 0.23339) 67.8%,
+      rgba(255, 255, 255, 0.1125) 86.73%
+    );
+
+    clip-path: polygon(
+      50% 0%,
+      80% 10%,
+      100% 35%,
+      100% 70%,
+      80% 90%,
+      50% 100%,
+      20% 90%,
+      0% 70%,
+      0% 35%,
+      20% 10%
+    );
   }
 }

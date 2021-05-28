@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
- class Todo extends Component {
+ class TodoList extends Component {
 
      statusProgress=(id)=>{
         // console.log(this.props.todo.id);
@@ -51,4 +51,4 @@ import React, { Component } from 'react'
     }
 }
 
-export default Todo
+export default TodoList

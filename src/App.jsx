@@ -10,7 +10,9 @@ function App() {
       </header>
       
       <TodoHandler/>
-      
+        <div className="glass-circle"/>
+        <div className="glass-rombus"/>
+        <div className="glass-poly"/>
       <div className="bg-square"/>
       <div className="bg-circle"></div>
     </div>

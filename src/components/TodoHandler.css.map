@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,gBAAgB,CAAC;EACf,KAAK,EAAE,GAAG;EACV,MAAM,EAAE,IAAI;EACZ,QAAQ,EAAE,QAAQ;EAClB,GAAG,EAAE,IAAI;EACT,IAAI,EAAE,GAAG;EACT,KAAK,EAAE,GAAG;EACV,UAAU,EAAE,mFAIX;EACD,MAAM,EAAE,yBAAyB,CAAC,KAAK,CAAC,KAAK;EAC7C,aAAa,EAAE,IAAI;EACnB,eAAe,EAAE,UAAU;EAC3B,OAAO,EAAE,CAAC;CACX",
-    "sources": [
-        "TodoHandler.scss"
-    ],
-    "names": [],
-    "file": "TodoHandler.css"
-}

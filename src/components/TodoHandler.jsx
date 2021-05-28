@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 // import ClearList from './ClearList';
 import TodoDisplay from './TodoDisplay.jsx';
 import TodoForm from './TodoForm';
-import './TodoHandler.css';
+import '../styling/TodoHandler.css';
 
 class TodoHandler extends Component {
 

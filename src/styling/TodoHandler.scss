@@ -15,7 +15,6 @@
   backdrop-filter: blur(7px);
   z-index: 5;
   overflow: hidden;
-  // display: flex;
 
   .clear-btn {
     position: relative;
@@ -35,10 +34,7 @@
     text-align: center;
 
     &:hover {
-      // border-radius: 0;
       box-shadow: 5px 4px 3px 0.25px rgba(0, 0, 0, 0.55);
-      // width: 57px;
-      // height: 34px;
       transform: translate(-1.5px, -1.5px);
       transition: ease-in 150ms;
     }
@@ -53,7 +49,6 @@
     position: relative;
     left: 2%;
     top: -8vh;
-    // z-index: 2;
 
     .input-slot {
       position: relative;
@@ -112,7 +107,6 @@
       position: relative;
       left: -4.6%;
       top: -1.65vh;
-      // left: -2vh;
       width: 55px;
       height: 32px;
       border-radius: 26px;
@@ -122,7 +116,6 @@
       z-index: 2;
 
       &:hover {
-        // border-radius: 0;
         box-shadow: 5px 4px 3px 0.25px rgba(0, 0, 0, 0.55);
         width: 57px;
         height: 34px;
@@ -134,10 +127,6 @@
         box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.15);
         transition: ease 250ms;
       }
-      // &:focus {
-      //   box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.45);
-      // }
-
       .add {
         position: relative;
         left: 30%;
@@ -151,7 +140,6 @@
         mask-image: url(../images/add.svg);
         mask-repeat: no-repeat;
         background-size: 24px 24px;
-        // border: black solid;
       }
     }
 

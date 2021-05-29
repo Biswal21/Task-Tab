@@ -71,9 +71,6 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /* Track */
-  /* Handle */
-  /* Handle on hover */
 }
 
 .todo-container .list-container ::-webkit-scrollbar {

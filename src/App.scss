@@ -1,6 +1,5 @@
 .App {
   position: relative;
-  // text-align: center;
   min-width: 100vh;
   max-height: 100vh;
   background: linear-gradient(
@@ -9,7 +8,6 @@
     rgba(127, 250, 235, 0.85)
   );
   overflow: hidden;
-  // filter: blur(100px);
 
   .bg-square {
     position: absolute;
@@ -24,7 +22,6 @@
       rgba(137, 150, 245, 1),
       rgba(127, 250, 235, 0.85)
     );
-    // clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
     border-right: 50% solid transparent;
     border-left: 50% solid transparent;
     border-bottom: 100% solid transparent;
@@ -45,7 +42,6 @@
     left: 1125px;
     top: 125px;
     border-radius: 100%;
-    // border: chocolate solid;
     background: linear-gradient(
       194deg,
       rgba(137, 150, 245, 1),
@@ -83,7 +79,6 @@
       background-size: 100%;
       background-clip: text;
       -webkit-text-fill-color: transparent;
-      // letter-spacing: 3px;
     }
   }
 
@@ -102,7 +97,6 @@
       rgba(255, 255, 255, 0.202271) 33.23%,
       rgba(255, 255, 255, 0.0975) 98.88%
     );
-    // filter: blur(3px);
   }
   .glass-rombus {
     position: relative;
@@ -116,7 +110,6 @@
       rgba(255, 255, 255, 0.202271) 49.25%,
       rgba(255, 255, 255, 0.0975) 111.31%
     );
-    // clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
     transform: skewX(-40deg) skewY(10deg) rotate(-20deg);
     border-radius: 22px 18px;
     z-index: 1;

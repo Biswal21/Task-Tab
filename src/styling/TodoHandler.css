@@ -5,15 +5,177 @@
   top: 18vh;
   left: 20%;
   right: 10%;
-  background: linear-gradient(
-    108.6deg,
-    rgba(255, 255, 255, 0.3575),
-    rgba(255, 255, 255, 0.0975)
-  );
+  background: linear-gradient(108.6deg, rgba(255, 255, 255, 0.3575), rgba(255, 255, 255, 0.0975));
   border: rgba(255, 255, 255, 0.85) solid 1.2px;
   border-radius: 26px;
   -webkit-backdrop-filter: blur(7px);
-  backdrop-filter: blur(7px);
+          backdrop-filter: blur(7px);
   z-index: 5;
+  overflow: hidden;
+}
+
+.glass-container .clear-btn {
+  position: relative;
+  left: 50%;
+  top: -8vh;
+}
+
+.glass-container .form {
+  position: relative;
+  left: 2%;
+  top: -8vh;
+}
+
+.glass-container .form .input-slot {
+  position: relative;
+  top: -2vh;
+  width: 27%;
+  height: 40px;
+  padding-left: 1.8%;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 1.5rem;
+  background: none;
+  border: #fff 1.2px solid;
+  border-radius: 26px;
+}
+
+.glass-container .form .input-slot::-webkit-input-placeholder {
+  color: rgba(46, 92, 245, 0.64);
+  -webkit-transition: color 200ms ease;
+  transition: color 200ms ease;
+}
+
+.glass-container .form .input-slot:focus {
+  outline: none;
+  color: #8a6a6a;
+}
+
+.glass-container .form .input-slot:focus::-ms-input-placeholder {
+  color: transparent;
+  -webkit-transition: color 200ms ease;
+  transition: color 200ms ease;
+}
+
+.glass-container .form .input-slot:focus::-webkit-input-placeholder {
+  color: transparent;
+  -webkit-transition: color 200ms ease;
+  transition: color 200ms ease;
+}
+
+.glass-container .form .input-slot:focus:-moz-input-placeholder {
+  color: transparent;
+  -webkit-transition: color 200ms ease;
+  transition: color 200ms ease;
+}
+
+.glass-container .form .input-slot:focus::-webkit-input-placeholder {
+  color: transparent;
+  -webkit-transition: color 200ms ease;
+  transition: color 200ms ease;
+}
+
+@media screen and (max-width: 1085px) {
+  .glass-container .form .input-slot {
+    font-size: 1.3rem;
+  }
+}
+
+.glass-container .form .submit-btn {
+  position: relative;
+  left: -5.3%;
+  top: -1.75vh;
+  width: 55px;
+  height: 32px;
+  border-radius: 26px;
+  -webkit-box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.25);
+  border: none;
+  -webkit-transition: ease-out 150ms;
+  transition: ease-out 150ms;
+  z-index: 2;
+}
+
+.glass-container .form .submit-btn:hover {
+  -webkit-box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.45);
+          box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.45);
+  -webkit-transform: translate(-1px, -1px);
+          transform: translate(-1px, -1px);
+  -webkit-transition: ease-in 150ms;
+  transition: ease-in 150ms;
+}
+
+.glass-container .form .submit-btn:active {
+  -webkit-box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.15);
+  -webkit-transition: ease-out 150ms;
+  transition: ease-out 150ms;
+}
+
+.glass-container .form .submit-btn .add {
+  position: relative;
+  left: 30%;
+  width: 24px;
+  height: 24px;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(4.69%, rgba(46, 92, 245, 0.96)), to(rgba(137, 150, 245, 0.85)));
+  background-image: linear-gradient(180deg, rgba(46, 92, 245, 0.96) 4.69%, rgba(137, 150, 245, 0.85) 100%);
+  -webkit-mask-image: url(../images/iconmonstr-plus-2.svg);
+          mask-image: url(../images/iconmonstr-plus-2.svg);
+  -webkit-mask-repeat: no-repeat;
+          mask-repeat: no-repeat;
+  background-size: 24px 24px;
+}
+
+@media screen and (max-width: 1790px) {
+  .glass-container .form .submit-btn {
+    position: relative;
+    left: -6%;
+  }
+}
+
+@media screen and (max-width: 1670px) {
+  .glass-container .form .submit-btn {
+    position: relative;
+    left: -6.3%;
+  }
+}
+
+@media screen and (max-width: 1550px) {
+  .glass-container .form .submit-btn {
+    position: relative;
+    left: -7%;
+  }
+}
+
+@media screen and (max-width: 1396px) {
+  .glass-container .form .submit-btn {
+    position: relative;
+    left: -7.3%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .glass-container .form .submit-btn {
+    position: relative;
+    left: -8.2%;
+    height: 31px;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .glass-container .form .submit-btn {
+    position: relative;
+    left: -8.7%;
+    height: 31px;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+  .glass-container .form .submit-btn {
+    position: relative;
+    top: -1.6vh;
+    left: -9.1%;
+    height: 31px;
+  }
 }
 /*# sourceMappingURL=TodoHandler.css.map */

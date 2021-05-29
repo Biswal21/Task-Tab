@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import '../styling/TodoDisplay.css'
 
  class TodoList extends Component {
 

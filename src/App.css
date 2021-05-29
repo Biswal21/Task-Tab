@@ -1,8 +1,7 @@
 .App {
   position: relative;
-  text-align: center;
   min-width: 100vh;
-  min-height: 100vh;
+  max-height: 100vh;
   background: linear-gradient(107deg, rgba(137, 150, 245, 0.85), rgba(127, 250, 235, 0.85));
   overflow: hidden;
 }
@@ -20,7 +19,7 @@
   border-left: 50% solid transparent;
   border-bottom: 100% solid transparent;
   border-radius: 30px;
-  overflow-x: hidden;
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

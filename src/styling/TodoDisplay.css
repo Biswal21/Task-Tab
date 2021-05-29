@@ -1,0 +1,106 @@
+.todo-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 26px;
+}
+
+.todo-container .header-container {
+  width: 100%;
+  height: 26%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.todo-container .header-container .todo-header {
+  position: relative;
+  width: 33.33%;
+  height: 100%;
+  font-size: 3rem;
+  font-weight: 500;
+  padding-top: 7.6%;
+  padding-left: 1%;
+  color: rgba(46, 92, 245, 0.64);
+  border: #fff 1.2px solid;
+}
+
+.todo-container .header-container #todo {
+  background: linear-gradient(281.95deg, rgba(240, 69, 103, 0.342) 14.36%, rgba(251, 251, 251, 0) 78.3%);
+}
+
+.todo-container .header-container #progress {
+  background: linear-gradient(281.95deg, rgba(248, 233, 89, 0.342) 14.36%, rgba(251, 251, 251, 0) 78.3%);
+}
+
+.todo-container .header-container #completed {
+  background: linear-gradient(281.95deg, rgba(87, 248, 149, 0.342) 14.36%, rgba(251, 251, 251, 0) 78.3%);
+}
+
+@media screen and (max-width: 1552px) {
+  .todo-container .header-container .todo-header {
+    font-size: 2.35rem;
+    padding-top: 11%;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .todo-container .header-container .todo-header {
+    font-size: 2.25rem;
+    padding-top: 12%;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  .todo-container .header-container .todo-header {
+    font-size: 2rem;
+    padding-top: 16%;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .todo-container .header-container .todo-header {
+    font-size: 1.55rem;
+    padding-top: 21%;
+  }
+}
+
+.todo-container .list-container {
+  background: green;
+  width: 100%;
+  height: 74%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.todo-container .list-container ol {
+  width: 33.33%;
+  background: #fff;
+  padding: 2%;
+}
+
+.todo-container .list-container ol div {
+  border: black solid 2px;
+  font-size: 1.5rem;
+  margin-bottom: 1vh;
+  padding-left: 12%;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.todo-container .list-container ol div li ::marker {
+  color: #ff9d00;
+  border: 2px black;
+}
+
+.todo-container .list-container .todo-display {
+  background: red;
+}
+
+.todo-container .list-container .progress-display {
+  background: blue;
+}
+/*# sourceMappingURL=TodoDisplay.css.map */

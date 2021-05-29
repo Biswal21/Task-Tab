@@ -1,9 +1,9 @@
 .glass-container {
-  width: 60%;
-  height: 72vh;
+  width: 70%;
+  height: 74vh;
   position: absolute;
   top: 18vh;
-  left: 20%;
+  left: 16%;
   right: 10%;
   background: linear-gradient(108.6deg, rgba(255, 255, 255, 0.3575), rgba(255, 255, 255, 0.0975));
   border: rgba(255, 255, 255, 0.85) solid 1.2px;
@@ -16,8 +16,37 @@
 
 .glass-container .clear-btn {
   position: relative;
-  left: 50%;
-  top: -8vh;
+  left: 75%;
+  top: -7vh;
+  width: 18%;
+  height: 4vh;
+  border-radius: 20px;
+  border: none;
+  -webkit-box-shadow: 5px 3px 4px 0px rgba(0, 0, 0, 0.25);
+          box-shadow: 5px 3px 4px 0px rgba(0, 0, 0, 0.25);
+  background: #fffefe;
+  color: rgba(46, 92, 245, 0.64);
+  font-family: Roboto;
+  font-size: 25px;
+  font-weight: 500;
+  line-height: 29px;
+  text-align: center;
+}
+
+.glass-container .clear-btn:hover {
+  -webkit-box-shadow: 5px 4px 3px 0.25px rgba(0, 0, 0, 0.55);
+          box-shadow: 5px 4px 3px 0.25px rgba(0, 0, 0, 0.55);
+  -webkit-transform: translate(-1.5px, -1.5px);
+          transform: translate(-1.5px, -1.5px);
+  -webkit-transition: ease-in 150ms;
+  transition: ease-in 150ms;
+}
+
+.glass-container .clear-btn:active {
+  -webkit-box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.15);
+          box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.15);
+  -webkit-transition: ease-out 150ms;
+  transition: ease-out 150ms;
 }
 
 .glass-container .form {
@@ -83,8 +112,8 @@
 
 .glass-container .form .submit-btn {
   position: relative;
-  left: -5.3%;
-  top: -1.75vh;
+  left: -4.6%;
+  top: -1.65vh;
   width: 55px;
   height: 32px;
   border-radius: 26px;
@@ -97,19 +126,21 @@
 }
 
 .glass-container .form .submit-btn:hover {
-  -webkit-box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.45);
-          box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.45);
-  -webkit-transform: translate(-1px, -1px);
-          transform: translate(-1px, -1px);
-  -webkit-transition: ease-in 150ms;
-  transition: ease-in 150ms;
+  -webkit-box-shadow: 5px 4px 3px 0.25px rgba(0, 0, 0, 0.55);
+          box-shadow: 5px 4px 3px 0.25px rgba(0, 0, 0, 0.55);
+  width: 57px;
+  height: 34px;
+  -webkit-transform: translate(-1.5px, -1.5px);
+          transform: translate(-1.5px, -1.5px);
+  -webkit-transition: ease 250ms;
+  transition: ease 250ms;
 }
 
 .glass-container .form .submit-btn:active {
   -webkit-box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.15);
           box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.15);
-  -webkit-transition: ease-out 150ms;
-  transition: ease-out 150ms;
+  -webkit-transition: ease 250ms;
+  transition: ease 250ms;
 }
 
 .glass-container .form .submit-btn .add {
@@ -119,8 +150,8 @@
   height: 24px;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(4.69%, rgba(46, 92, 245, 0.96)), to(rgba(137, 150, 245, 0.85)));
   background-image: linear-gradient(180deg, rgba(46, 92, 245, 0.96) 4.69%, rgba(137, 150, 245, 0.85) 100%);
-  -webkit-mask-image: url(../images/iconmonstr-plus-2.svg);
-          mask-image: url(../images/iconmonstr-plus-2.svg);
+  -webkit-mask-image: url(../images/add.svg);
+          mask-image: url(../images/add.svg);
   -webkit-mask-repeat: no-repeat;
           mask-repeat: no-repeat;
   background-size: 24px 24px;
@@ -129,35 +160,35 @@
 @media screen and (max-width: 1790px) {
   .glass-container .form .submit-btn {
     position: relative;
-    left: -6%;
+    left: -5%;
   }
 }
 
 @media screen and (max-width: 1670px) {
   .glass-container .form .submit-btn {
     position: relative;
-    left: -6.3%;
+    left: -5.3%;
   }
 }
 
 @media screen and (max-width: 1550px) {
   .glass-container .form .submit-btn {
     position: relative;
-    left: -7%;
+    left: -5.7%;
   }
 }
 
 @media screen and (max-width: 1396px) {
   .glass-container .form .submit-btn {
     position: relative;
-    left: -7.3%;
+    left: -6.3%;
   }
 }
 
 @media screen and (max-width: 1300px) {
   .glass-container .form .submit-btn {
     position: relative;
-    left: -8.2%;
+    left: -6.8%;
     height: 31px;
   }
 }
@@ -165,7 +196,7 @@
 @media screen and (max-width: 1200px) {
   .glass-container .form .submit-btn {
     position: relative;
-    left: -8.7%;
+    left: -7.4%;
     height: 31px;
   }
 }
@@ -174,7 +205,25 @@
   .glass-container .form .submit-btn {
     position: relative;
     top: -1.6vh;
-    left: -9.1%;
+    left: -8.1%;
+    height: 31px;
+  }
+}
+
+@media screen and (max-width: 1030px) {
+  .glass-container .form .submit-btn {
+    position: relative;
+    top: -1.6vh;
+    left: -8.7%;
+    height: 31px;
+  }
+}
+
+@media screen and (max-width: 945px) {
+  .glass-container .form .submit-btn {
+    position: relative;
+    top: -1.6vh;
+    left: -9.8%;
     height: 31px;
   }
 }

@@ -27,15 +27,19 @@ import '../styling/TodoDisplay.css'
             case 'todo':return(
                 <div>
                     <li className="todo-item">{task}</li>
-                    <button onClick={()=>this.statusProgress(id)}>Progress</button>
-                    <button onClick={()=>this.deleteItem(id)}>Delete</button>
+                    <div className="item-btn">
+                    <button className='all-btn progress-btn' onClick={()=>this.statusProgress(id)}></button>
+                    <button className='all-btn delete-btn' onClick={()=>this.deleteItem(id)}></button>
+                    </div>
                 </div>
             )
             case 'progress':return(
                 <div>
                     <li className="progress-item">{task}</li>
-                    <button onClick={()=>this.statusTodo(id)}>ToDo</button>
-                    <button onClick={()=>this.statusDone(id)}>Completed</button>
+                    <div className="item-btn">
+                    <button className='all-btn todo-btn' onClick={()=>this.statusTodo(id)}></button>
+                    <button className='all-btn completed-btn' onClick={()=>this.statusDone(id)}></button>
+                    </div> 
                 </div>
             )
             case 'done':return(

@@ -69,7 +69,9 @@
 .App .header-box h1 {
   position: relative;
   font-family: "Poppins";
-  font-size: 3rem;
+  font-size: 5rem;
+  font-weight: 400;
+  font-style: normal;
   margin-left: 4%;
   background: linear-gradient(262.66deg, #4e4e4e, rgba(84, 96, 94, 0.85));
   background-size: 100%;

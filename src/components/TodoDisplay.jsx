@@ -21,14 +21,14 @@ class TodoDisplay extends Component {
                 deleteTodoItem={this.props.deleteTodoItem}
                 />:null)}
             </ol>
-            
+            <div style={{width:"0px", border:"0.5px solid white"}}></div>
             <ol className="progress-display">
                 {this.props.todos.map(todo=>todo.status==='progress'?<Todo todo={todo} key={todo.id}
                 statusHandler={this.props.statusHandler}
                 deleteToDoItem={this.props.statusHandler}
                 />:null)}
             </ol>
-  
+            <div style={{width:"0px", border:"0.5px solid white"}}></div>
             <ol className="completed-display">
                 {this.props.todos.map(todo=>todo.status==='done'?<Todo todo={todo} key={todo.id}/>:null)}
             </ol>

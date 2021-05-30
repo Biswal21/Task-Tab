@@ -81,12 +81,6 @@ class TodoHandler extends Component {
             todos: remainingTodo
         })
     }
-
-    // statusTodo(id){
-    //     this.setState(prevState=>({
-    //         todos:prevState.todos.map(todo=>((todo.id)===Number(id)?{...todo,status:'todo'}:{...todo}))
-    //     }))
-    // }
     
     
 

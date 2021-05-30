@@ -1,6 +1,6 @@
 .glass-container {
   width: 70%;
-  height: 74vh;
+  height: 75vh;
   position: absolute;
   top: 18vh;
   left: 16%;
@@ -18,8 +18,8 @@
   position: relative;
   left: 75%;
   top: -7vh;
-  width: 18%;
-  height: 4vh;
+  width: 20%;
+  height: 8%;
   border-radius: 20px;
   border: none;
   -webkit-box-shadow: 5px 3px 4px 0px rgba(0, 0, 0, 0.25);
@@ -52,7 +52,7 @@
 .glass-container .form {
   position: relative;
   left: 2%;
-  top: -8vh;
+  top: -9.7vh;
 }
 
 .glass-container .form .input-slot {
@@ -63,7 +63,7 @@
   padding-left: 1.8%;
   font-family: Roboto;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   background: none;
   border: #fff 1.2px solid;
   border-radius: 26px;
@@ -73,6 +73,14 @@
   color: rgba(46, 92, 245, 0.64);
   -webkit-transition: color 200ms ease;
   transition: color 200ms ease;
+}
+
+@-moz-document url-prefix() {
+  .glass-container .form .input-slot {
+    color: #2e5cf5;
+    font-size: 1.5em;
+    -webkit-transition: color 200ms ease;
+  }
 }
 
 .glass-container .form .input-slot:focus {
@@ -98,10 +106,12 @@
   transition: color 200ms ease;
 }
 
-.glass-container .form .input-slot:focus::-webkit-input-placeholder {
-  color: transparent;
-  -webkit-transition: color 200ms ease;
-  transition: color 200ms ease;
+@-moz-document url-prefix() {
+  .glass-container .form .input-slot:focus {
+    color: transparent;
+    -webkit-transition: color 200ms ease;
+    color: #8a6a6a;
+  }
 }
 
 @media screen and (max-width: 1085px) {
@@ -113,15 +123,16 @@
 .glass-container .form .submit-btn {
   position: relative;
   left: -4.6%;
-  top: -1.65vh;
+  top: -1.95vh;
   width: 55px;
   height: 32px;
   border-radius: 26px;
+  background-color: white;
   -webkit-box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.25);
           box-shadow: 3px 3px 2px 0px rgba(0, 0, 0, 0.25);
   border: none;
-  -webkit-transition: ease-out 150ms;
-  transition: ease-out 150ms;
+  -webkit-transition: ease-out 100ms;
+  transition: ease-out 100ms;
   z-index: 2;
 }
 
@@ -132,8 +143,8 @@
   height: 34px;
   -webkit-transform: translate(-1.5px, -1.5px);
           transform: translate(-1.5px, -1.5px);
-  -webkit-transition: ease 250ms;
-  transition: ease 250ms;
+  -webkit-transition: ease 150ms;
+  transition: ease 150ms;
 }
 
 .glass-container .form .submit-btn:active {

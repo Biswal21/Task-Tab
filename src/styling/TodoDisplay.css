@@ -6,6 +6,7 @@
 }
 
 .todo-container .header-container {
+  position: relative;
   width: 100%;
   height: 26%;
   display: -webkit-box;
@@ -14,7 +15,9 @@
 }
 
 .todo-container .header-container .todo-header {
-  position: relative;
+  position: absolute;
+  top: 0;
+  left: 0;
   width: 33.33%;
   height: 100%;
   font-size: 3rem;
@@ -30,10 +33,12 @@
 }
 
 .todo-container .header-container #progress {
+  left: 33.33%;
   background: linear-gradient(281.95deg, rgba(248, 233, 89, 0.342) 14.36%, rgba(251, 251, 251, 0) 78.3%);
 }
 
 .todo-container .header-container #completed {
+  left: 66.66%;
   background: linear-gradient(281.95deg, rgba(87, 248, 149, 0.342) 14.36%, rgba(251, 251, 251, 0) 78.3%);
 }
 
@@ -84,6 +89,13 @@
   border-radius: 10px;
 }
 
+.todo-container .list-container ::-moz-scrollbar-thumb {
+  background: rgba(255, 248, 248, 0.69);
+  border-radius: 10px;
+  border: 1px solid transparent;
+  background-clip: content-box;
+}
+
 .todo-container .list-container ::-webkit-scrollbar-thumb {
   background: rgba(255, 248, 248, 0.69);
   border-radius: 10px;
@@ -109,18 +121,34 @@
 
 .todo-container .list-container ol div {
   position: relative;
-  font-size: 1.5rem;
-  padding-left: 12%;
-  margin-bottom: 10px;
+  height: auto;
+  font-size: 25px;
+  margin-bottom: 2%;
   border-radius: 9px;
-  z-index: 2;
-  border: 1.2px solid #7d5c5c;
+  z-index: 1;
+  word-wrap: break-word;
+  border: 2px solid #7d5c5c;
 }
 
-.todo-container .list-container ol div li {
+.todo-container .list-container ol div .item-container {
+  height: 100%;
+  width: 100%;
+  padding-top: 2%;
+  padding-left: 10%;
+  border: none;
+  word-wrap: break-word;
+}
+
+.todo-container .list-container ol div .item-container li {
+  height: 100%;
   color: #8a6a6a;
   font-weight: 500;
   font-style: normal;
+  z-index: 2;
+}
+
+.todo-container .list-container ol div .item-container li::marker {
+  font-weight: 700;
 }
 
 .todo-container .list-container ol div .item-btn {
@@ -129,7 +157,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  z-index: 1;
+  z-index: 4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;

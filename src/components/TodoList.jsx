@@ -26,7 +26,9 @@ import '../styling/TodoDisplay.css'
         switch (status) {
             case 'todo':return(
                 <div>
-                    <li className="todo-item">{task}</li>
+                    <div className="item-container">
+                    <li>{task}</li>
+                    </div>
                     <div className="item-btn">
                     <button className='all-btn progress-btn' onClick={()=>this.statusProgress(id)}></button>
                     <button className='all-btn delete-btn' onClick={()=>this.deleteItem(id)}></button>

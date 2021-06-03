@@ -37,7 +37,9 @@ import '../styling/TodoDisplay.css'
             )
             case 'progress':return(
                 <div>
-                    <li className="progress-item">{task}</li>
+                    <div className="item-container">
+                    <li>{task}</li>
+                    </div>
                     <div className="item-btn">
                     <button className='all-btn todo-btn' onClick={()=>this.statusTodo(id)}></button>
                     <button className='all-btn completed-btn' onClick={()=>this.statusDone(id)}></button>
@@ -46,7 +48,9 @@ import '../styling/TodoDisplay.css'
             )
             case 'done':return(
                 <div>
-                    <li className="completed-item">{task}</li>
+                    <div className="item-container">
+                    <li>{task}</li>
+                    </div>
                 </div>
             )
             default: return(

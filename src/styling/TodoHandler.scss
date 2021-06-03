@@ -34,9 +34,9 @@
     text-align: center;
 
     &:hover {
-      box-shadow: 5px 4px 3px 0.25px rgba(0, 0, 0, 0.55);
-      transform: translate(-1.5px, -1.5px);
-      transition: ease-in 150ms;
+      box-shadow: 5px 4px 3px 0.25px rgba(0, 0, 0, 0.75);
+      transform: translateY(-2px);
+      transition: ease 200ms;
     }
 
     &:active {
@@ -69,7 +69,7 @@
       }
 
       @-moz-document url-prefix() {
-        color: rgba(46, 92, 245, 1);
+        color: rgba(46, 92, 245, 0.64);
         font-size: 1.5em;
         -webkit-transition: color 200ms ease;
       }
